@@ -6,19 +6,24 @@ using namespace std;
 vector<long long int> primeNums;
 
 void findNextPrime(int nextPrime){
-	nextPrime++;
-	bool prime = true;
-	for(int i = 0; i < primeNums.size(); i++){
-		if((nextPrime % primeNums.at(i)) == 0){
-			prime = false;
-			break;
+	while(1){
+		if(nextPrime!=2)
+			nextPrime++;
+		nextPrime++;
+		bool prime = true;
+		for(int i = 0; i < primes.size(); i++){
+			if(primes.at(i) * primes.at(i) > nextPrime)
+				break;
+			if((nextPrime % primes.at(i)) == 0){
+				prime = false;
+				break;
+			}
+		}
+		if(prime){
+			primes.push_back(nextPrime);
+			return;
 		}
 	}
-	if(prime){
-		primeNums.push_back(nextPrime);
-		return;
-	}
-	findNextPrime(nextPrime);
 }
 
 long long int primeFactor(long long int num){

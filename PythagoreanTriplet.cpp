@@ -8,7 +8,7 @@ int main(){
 			for(int k = 0; k < 1000; k++){
 				if(i*i + j*j == k*k){
 					if(i+j+k == 1000){
-						cout << i*j*k << endl;;
+						cout << i*j*k << endl;
 					}
 				}
 	}}}
