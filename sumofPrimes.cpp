@@ -1,3 +1,7 @@
+/*
+	this program is very slow. I think i can fix that by optimizing my findNextPrime function. Possibly remove the recursion.
+*/
+
 #include <iostream>
 #include <vector>
 
