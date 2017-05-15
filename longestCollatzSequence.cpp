@@ -29,7 +29,6 @@ int main(){
 		if(count > max){
 			max = count;
 			maxCollatz = i;
-			cout << max << endl;
 		}
 		cout << i << endl; 
 	}
