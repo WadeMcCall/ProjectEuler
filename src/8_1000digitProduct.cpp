@@ -11,7 +11,6 @@ int main(){
 		string tempS = number.substr(i, 13);
 		long long int product = 1;
 		for(c:tempS){
-			cout << c;
 			int x = c-'0';
 			if(x == 0){
 				product = 0;
@@ -19,7 +18,6 @@ int main(){
 			}
 			product *= x;
 		}
-		cout << ": " << product << endl;
 		if(product > max){
 			max = product;
 		}

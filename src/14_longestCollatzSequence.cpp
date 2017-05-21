@@ -19,7 +19,7 @@ long long int collatz(long long int a){
 int main(){
 	long long int max = 0;
 	long long int maxCollatz = 2;
-	for(int i = 500000; i < 1000000; i++){
+	for(int i = 1; i < 1000000; i++){
 		long long int collat = i;
 		long long int count = 0;
 		while(collat != 1){
@@ -30,7 +30,6 @@ int main(){
 			max = count;
 			maxCollatz = i;
 		}
-		cout << i << endl; 
 	}
 	cout << maxCollatz;
 }

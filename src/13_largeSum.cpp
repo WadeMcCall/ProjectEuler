@@ -8,7 +8,7 @@ using namespace std;
 int main(){
 	//read in the inputs from my input file
 	ifstream inFile;
-	inFile.open("largeSumInputFile.txt");
+	inFile.open("../input/largeSumInputFile.txt");
 	vector<string> inputs;
 	string temp;
 	while(inFile >> temp ){
