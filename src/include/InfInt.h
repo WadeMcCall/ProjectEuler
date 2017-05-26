@@ -40,8 +40,8 @@
 #include <sstream>
 #include <iomanip>
 
-//#include <limits.h>
-//#include <stdlib.h>
+#include <limits.h>
+#include <stdlib.h>
 
 //#ifdef _WIN32
 //#define LONG_LONG_MIN LLONG_MIN
