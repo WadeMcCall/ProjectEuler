@@ -8,17 +8,6 @@ using namespace std;
 
 vector<long long int> primeNums;
 
-int numDigits(int number)
-{
-    int digits = 0;
-    if (number < 0) digits = 1; // remove this line if '-' counts as a digit
-    while (number) {
-        number /= 10;
-        digits++;
-    }
-    return digits;
-}
-
 void findNextPrime(int nextPrime){
 	while(1){
 		if(nextPrime!=2)
