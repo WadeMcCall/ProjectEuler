@@ -3,7 +3,7 @@
 
 using namespace std;
 
-vector<long long int> primeNums;
+vector<long long int> primes;
 
 void findNextPrime(int nextPrime){
 	while(1){
@@ -28,19 +28,19 @@ void findNextPrime(int nextPrime){
 
 long long int primeFactor(long long int num){
 	while(true){
-		for(int i = 0; i < primeNums.size(); i++){
-			if((num % primeNums.at(i)) == 0){
-				return primeNums.at(i);
+		for(int i = 0; i < primes.size(); i++){
+			if((num % primes.at(i)) == 0){
+				return primes.at(i);
 			}
 		}
-		findNextPrime(primeNums.at(primeNums.size()-1));
+		findNextPrime(primes.at(primes.size()-1));
 	}
 }
 
 int main(){
 	long long int max = 0;
 	long long int temp = 0;
-	primeNums.push_back(2);
+	primes.push_back(2);
 	long long int primeFactorNumber = 600851475143;
 	while(primeFactorNumber != 1){
 		temp = primeFactor(primeFactorNumber);
